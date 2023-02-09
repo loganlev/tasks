@@ -13,6 +13,8 @@ function App(): JSX.Element {
             </p>
 
             <p>Logan Levine</p>
+
+            <p>Hello World</p>
         </div>
     );
 }
