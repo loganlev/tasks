@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import daisy from "/Users/loganlevine/tasks/src/daisy.jpeg";
+import daisy from "./daisy.jpeg";
 
 function App(): JSX.Element {
     return (
