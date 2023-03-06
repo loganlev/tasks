@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import daisy from "/Users/loganlevine/tasks/src/daisy.jpeg";
 
 function App(): JSX.Element {
     return (
@@ -14,7 +13,7 @@ function App(): JSX.Element {
                 <Row>
                     <Col>
                         <img
-                            src={daisy}
+                            src={"daisy.jpeg"}
                             alt="A picture of my dog Daisy in her bed."
                         />
                         <br></br>
