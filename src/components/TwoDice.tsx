@@ -23,6 +23,15 @@ export function TwoDice(): JSX.Element {
         setRight(d6);
     }
 
+    function isEqual(): JSX.Element {
+        if (left === 1 && right === 1) {
+            return <div>You Lose</div>;
+        } else if (left === right) {
+            return <div>You Win</div>;
+        }
+        return <div></div>;
+    }
+
     return (
         <div>
             <Button onClick={rollLeft}>Roll Left</Button>
@@ -32,13 +41,7 @@ export function TwoDice(): JSX.Element {
             <Button onClick={rollRight}>Roll Right</Button>
             <br></br>
             {right}
-            {left === 1 && right === 1 ? (
-                <div>You Lose</div>
-            ) : left === right ? (
-                <div>You Win</div>
-            ) : (
-                ""
-            )}
+            {isEqual()}
             <div>
                 The value of Left Dice is{" "}
                 <span data-testid="left-die">{left}</span>.<br></br>
