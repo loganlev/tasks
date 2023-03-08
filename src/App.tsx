@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import daisy from "./daisy.jpeg";
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
-import { d6, TwoDice } from "./components/TwoDice";
+import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
-import { QuestionType } from "./interfaces/question";
-import { countShortWords } from "./arrays";
+//import { QuestionType } from "./interfaces/question";
+//import { countShortWords } from "./arrays";
 
 function App(): JSX.Element {
     return (
