@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import daisy from "./daisy.jpeg";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { d6, TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
+import { QuestionType } from "./interfaces/question";
+import { countShortWords } from "./arrays";
 
 function App(): JSX.Element {
     return (
@@ -13,29 +21,35 @@ function App(): JSX.Element {
             <Container>
                 <Row>
                     <Col>
+                        <div
+                            style={{
+                                width: "100%",
+                                height: "10%",
+                                backgroundColor: "red"
+                            }}
+                        ></div>
+                        <Button onClick={() => console.log("Hello World!")}>
+                            Log Hello World
+                        </Button>
+                        <p>Logan Levine</p>
+                        <p>Hello World</p>
                         <img
                             src={daisy}
                             alt="A picture of my dog Daisy in her bed."
                         />
                         <br></br>
                         <br></br>
-                        <Button onClick={() => console.log("Hello World!")}>
-                            Log Hello World
-                        </Button>
                         <br></br>
                         <br></br>
-                        <p>Logan Levine</p>
-                        <br></br>
-                        <p>Hello World</p>
+                    </Col>
+                    <Col>
                         <div
                             style={{
-                                width: "50%",
-                                height: "100%",
+                                width: "100%",
+                                height: "10%",
                                 backgroundColor: "red"
                             }}
                         ></div>
-                    </Col>
-                    <Col>
                         Best Icecream Flavors:
                         <ul>
                             <li>Chocolate</li>
@@ -46,20 +60,21 @@ function App(): JSX.Element {
                         <br></br>
                         <br></br>
                         <br></br>
-                        <div
-                            style={{
-                                width: "50%",
-                                height: "100%",
-                                backgroundColor: "red"
-                            }}
-                        ></div>
                     </Col>
                 </Row>
             </Container>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
