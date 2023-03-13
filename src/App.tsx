@@ -10,6 +10,10 @@ import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
 //import { QuestionType } from "./interfaces/question";
 //import { countShortWords } from "./arrays";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): JSX.Element {
     return (
@@ -28,9 +32,12 @@ function App(): JSX.Element {
                                 backgroundColor: "red"
                             }}
                         ></div>
+                        <br></br>
                         <Button onClick={() => console.log("Hello World!")}>
                             Log Hello World
                         </Button>
+                        <br></br>
+                        <br></br>
                         <p>Logan Levine</p>
                         <p>Hello World</p>
                         <img
@@ -63,6 +70,14 @@ function App(): JSX.Element {
                     </Col>
                 </Row>
             </Container>
+            <hr></hr>
+            <DoubleHalf></DoubleHalf>
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <ShoveBox></ShoveBox>
             <hr></hr>
             <Counter></Counter>
             <hr />
