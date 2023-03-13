@@ -34,10 +34,11 @@ export function CycleHoliday(): JSX.Element {
 
     return (
         <div>
-            <Button onClick={shiftAlphabetically}>Advance by Alphabet</Button>
-            <br></br>
             Holiday: {emoji}
             <br></br>
+            <Button onClick={shiftAlphabetically}>
+                Advance by Alphabet
+            </Button>{" "}
             <Button onClick={shiftTime}>Advance by Year</Button>
         </div>
     );

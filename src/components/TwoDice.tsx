@@ -34,13 +34,8 @@ export function TwoDice(): JSX.Element {
 
     return (
         <div>
-            <Button onClick={rollLeft}>Roll Left</Button>
-            <br></br>
-            {left}
-            <br></br>
+            <Button onClick={rollLeft}>Roll Left</Button>{" "}
             <Button onClick={rollRight}>Roll Right</Button>
-            <br></br>
-            {right}
             {isEqual()}
             <div>
                 The value of Left Dice is{" "}

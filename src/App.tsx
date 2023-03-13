@@ -32,9 +32,12 @@ function App(): JSX.Element {
                                 backgroundColor: "red"
                             }}
                         ></div>
+                        <br></br>
                         <Button onClick={() => console.log("Hello World!")}>
                             Log Hello World
                         </Button>
+                        <br></br>
+                        <br></br>
                         <p>Logan Levine</p>
                         <p>Hello World</p>
                         <img
@@ -68,7 +71,7 @@ function App(): JSX.Element {
                 </Row>
             </Container>
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
+            <DoubleHalf></DoubleHalf>
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
